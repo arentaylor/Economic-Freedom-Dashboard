@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Visualization Dashboard for World Economic Freedom</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous">
+
+  <!--CSS Link-->
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<body>
+  <!-- Navigation Section -->
+  <div class="navigation">
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" style="background-color: rgba(214, 77, 85);" href="index.html">Economic Freedom</a>
+      <button class="navbar-toggler  border border-white" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Plots
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="regions.html">Region Scores</a>
+              <a class="dropdown-item" href="top20.html">Top 20 Countries</a>
+              <a class="dropdown-item" href="property.html">Property Rights</a>
+              <a class="dropdown-item" href="judicial.html">Judicial Effectiveness</a>
+              <a class="dropdown-item" href="financial.html">Financial Freedom</a>
+              <a class="dropdown-item" href="business.html">Business Freedom</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="comparisons.html">Comparison</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="data.html">Data</a>
+          </li>
+
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <!-- Content Section -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-12">
+        <!-- Left box  -->
+        <div class="box">
+          <h3 class="title">Regions</h3>
+          <hr>
+          <img src="./Images/ERScorebyRegion.png" alt="Average Region Scores">
+          <p>This visualization shows the average overall economic score by region. The Hertiage Foundation considers above 80 to be "economically free", and none of the regions meet that criteria 
+            as a group. The best scoring region is Europe, where the average score for the countries in that region is 69. The highest scoring country in Europe is Switzerland, with an 82, and the lowest score 
+            is Ukraine with a 53. The poorest performing region is Sub-Saharan Africa, where the average is 54. The highest score in that region is Mauritius, with a 73, and the lowest is Eritrea with a 39. 
+            The table below shows the descriptive statistics for the regions.
+          </p>
+          <br>
+          <br>
+          <style type="text/css">
+            table.tableizer-table {
+              font-size: 12px;
+              border: 1px solid #CCC; 
+              font-family: Arial, Helvetica, sans-serif;
+            } 
+            .tableizer-table td {
+              padding: 4px;
+              margin: 3px;
+              border: 1px solid #CCC;
+            }
+            .tableizer-table th {
+              background-color: #298B89; 
+              color: #FFF;
+              font-weight: bold;
+            }
+          </style>
+          <table class="tableizer-table">
+          <thead><tr class="tableizer-firstrow"><th>Region</th><th>count</th><th>mean</th><th>std</th><th>min</th><th>25%</th><th>50%</th><th>75%</th><th>max</th></tr></thead><tbody>
+           <tr><td>Americas</td><td>32</td><td>59.6</td><td>11.93</td><td>25.9</td><td>54.73</td><td>62.2</td><td>67.23</td><td>77.7</td></tr>
+           <tr><td>Asia-Pacific</td><td>43</td><td>60.63</td><td>13.73</td><td>5.9</td><td>54.8</td><td>57.8</td><td>65.6</td><td>90.2</td></tr>
+           <tr><td>Europe</td><td>44</td><td>68.63</td><td>6.85</td><td>52.3</td><td>64.43</td><td>67.95</td><td>74.38</td><td>81.9</td></tr>
+           <tr><td>Middle East and North Africa</td><td>14</td><td>61.26</td><td>9.32</td><td>46.2</td><td>53.22</td><td>60.9</td><td>66.48</td><td>77.6</td></tr>
+           <tr><td>Sub-Saharan Africa</td><td>47</td><td>54.18</td><td>7.22</td><td>38.9</td><td>50.1</td><td>54</td><td>57.8</td><td>73</td></tr>
+          </tbody></table>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-12">
+        <!-- Right Box -->
+        <div class="box">
+          <h5 class="title">Visualizations</h5>
+          <hr>
+
+
+          <div class="container">
+              <div class="row" style="padding-bottom: 30px;">
+                <div class="col-6">
+                  <a href="regions.html">
+                    <img class="panel" src="./Images/ERScorebyRegion.png" alt="Average Region Scores">
+                  </a>
+                </div>
+                <div class="col-6">
+                  <a href="top20.html">
+                    <img class="panel" src="./Images/Top20Countries.png" alt="Countries with the Top 20 Economic Freedom Scores">
+                  </a>
+                </div>
+              </div>
+  
+              <div class="row" style="padding-bottom: 30px;">
+                <div class="col-6">
+                  <a href="property.html">
+                    <img class="panel" src="./Images/Score_Property.png" alt="Property Score to Overall Score">
+                  </a>
+                </div>
+                <div class="col-6">
+                  <a href="judicial.html">
+                    <img class="panel" src="./Images/Score_Judicial.png" alt="Judicial Effectiveness Score to Overall Score">
+                  </a>
+                </div>
+  
+  
+              </div>
+              <div class="row" style="padding-bottom: 30px;">
+                      <div class="col-6">
+                        <a href="financial.html">
+                          <img class="panel" src="./Images/Score_FinancialFreedom.png" alt="Finiancial Freedom Score to Overall Score">
+                        </a>
+                      </div>
+                      <div class="col-6">
+                        <a href="business.html">
+                          <img class="panel" src="./Images/Score_Business.png" alt="Business Freedom Score to Overall Score">
+                        </a>
+                      </div>
+        
+        
+                    </div>
+            </div>
+  
+  
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer Section -->
+    <footer>
+      <div class="footer">DFTBA</div>
+    </footer>
+  
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"></script>
+  
+  </body>
+  
+  </html>
