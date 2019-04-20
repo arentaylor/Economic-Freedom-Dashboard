@@ -7,11 +7,11 @@ The measures are scored from 0 to 100, and the overall economic freedom score is
 
 The visualizations I included are:
 
-Average Score By Region
-The Top 20 Countries
-Overall Economic Freedom Score Compared to:
-    Property Rights
-    Judicial Effectiveness
-    Financial Freedom
-    Business Freedom
+* Average Score By Region
+* The Top 20 Countries
+* Overall Economic Freedom Score Compared to:
+    * Property Rights
+    * Judicial Effectiveness
+    * Financial Freedom
+    * Business Freedom
 
